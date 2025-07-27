@@ -10,7 +10,7 @@ const Achievements = () => {
       year: "2024",
       description: "Recognized for maintaining a 4.0 GPA throughout the academic year",
       icon: Trophy,
-      color: "from-yellow-400 to-orange-500"
+      color: "from-red-400 to-orange-500"
     },
     {
       title: "Leadership Excellence",
@@ -18,7 +18,7 @@ const Achievements = () => {
       year: "2023",
       description: "Led student council initiatives that improved campus life for 2000+ students",
       icon: Star,
-      color: "from-blue-400 to-purple-500"
+      color: "from-red-500 to-red-700"
     },
     {
       title: "Community Service Recognition",
@@ -26,7 +26,7 @@ const Achievements = () => {
       year: "2023",
       description: "Completed 200+ hours of community service in local education programs",
       icon: Award,
-      color: "from-green-400 to-blue-500"
+      color: "from-gray-600 to-red-600"
     },
     {
       title: "Science Fair Winner",
@@ -34,7 +34,7 @@ const Achievements = () => {
       year: "2023",
       description: "First place in regional science competition for innovative research project",
       icon: Medal,
-      color: "from-purple-400 to-pink-500"
+      color: "from-red-600 to-black"
     },
     {
       title: "Athletic Achievement",
@@ -42,7 +42,7 @@ const Achievements = () => {
       year: "2022",
       description: "Team captain and MVP for varsity basketball team",
       icon: Trophy,
-      color: "from-red-400 to-yellow-500"
+      color: "from-red-400 to-red-600"
     },
     {
       title: "Scholarship Recipient",
@@ -50,7 +50,7 @@ const Achievements = () => {
       year: "2022",
       description: "Awarded merit-based scholarship for academic excellence",
       icon: Award,
-      color: "from-indigo-400 to-cyan-500"
+      color: "from-gray-700 to-red-800"
     }
   ];
 

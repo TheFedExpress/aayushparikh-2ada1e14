@@ -10,28 +10,28 @@ const Home = () => {
       description: "View my accomplishments and awards",
       icon: Trophy,
       path: "/achievements",
-      gradient: "from-amber-400 to-orange-500"
+      gradient: "from-red-400 to-orange-500"
     },
     {
       title: "Academic Record",
       description: "Explore my educational journey",
       icon: GraduationCap,
       path: "/academics",
-      gradient: "from-blue-500 to-purple-600"
+      gradient: "from-red-500 to-red-700"
     },
     {
       title: "Extracurriculars",
       description: "Discover my activities and involvement",
       icon: Users,
       path: "/extracurriculars",
-      gradient: "from-green-400 to-blue-500"
+      gradient: "from-gray-600 to-red-600"
     },
     {
       title: "About Me",
       description: "Get to know me personally",
       icon: User,
       path: "/about",
-      gradient: "from-purple-500 to-pink-600"
+      gradient: "from-red-600 to-black"
     }
   ];
 
@@ -48,7 +48,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/about">
-              <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-smooth">
+              <Button size="lg" className="bg-gradient-primary hover:shadow-red-glow transition-smooth">
                 Get to Know Me
               </Button>
             </Link>
@@ -88,7 +88,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-dark">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>

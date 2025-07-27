@@ -92,11 +92,11 @@ const Extracurriculars = () => {
 
   const getTypeColor = (type: string) => {
     switch (type) {
-      case "Leadership": return "from-purple-400 to-blue-500";
+      case "Leadership": return "from-red-500 to-red-700";
       case "Sports": return "from-red-400 to-orange-500";
-      case "Academic": return "from-blue-400 to-cyan-500";
-      case "Service": return "from-green-400 to-teal-500";
-      default: return "from-gray-400 to-gray-500";
+      case "Academic": return "from-gray-600 to-red-600";
+      case "Service": return "from-red-600 to-black";
+      default: return "from-gray-600 to-gray-800";
     }
   };
 

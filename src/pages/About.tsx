@@ -89,7 +89,7 @@ const About = () => {
             {personalInfo.interests.map((interest, index) => (
               <Card key={index} className="group hover:shadow-elegant transition-smooth">
                 <CardHeader className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-accent flex items-center justify-center group-hover:scale-110 transition-smooth">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-accent flex items-center justify-center group-hover:scale-110 transition-smooth shadow-red-glow">
                     <interest.icon className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="group-hover:text-primary transition-smooth">
@@ -124,7 +124,7 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-4">
               {funFacts.map((fact, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-gradient-accent flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-6 h-6 rounded-full bg-gradient-accent flex items-center justify-center flex-shrink-0 mt-1 shadow-red-glow">
                     <span className="text-white text-sm font-bold">{index + 1}</span>
                   </div>
                   <p className="text-muted-foreground">{fact}</p>
