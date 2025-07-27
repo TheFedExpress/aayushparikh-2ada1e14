@@ -6,40 +6,28 @@ import { GraduationCap, BookOpen, Calendar, Award } from "lucide-react";
 const Academics = () => {
   const education = [
     {
-      institution: "University of Excellence",
-      degree: "Bachelor of Science in Computer Science",
-      period: "2022 - Present",
-      gpa: "4.0/4.0",
-      status: "Current",
-      highlights: [
-        "Dean's List - All Semesters",
-        "Computer Science Honor Society",
-        "Outstanding Student Award"
-      ]
-    },
-    {
-      institution: "Excellence High School",
+      institution: "Westwood High School",
       degree: "High School Diploma",
-      period: "2018 - 2022",
-      gpa: "3.95/4.0",
-      status: "Completed",
+      period: "2021 - 2025",
+      gpa: "5.75/6.0",
+      status: "Junior Year",
       highlights: [
-        "Valedictorian",
-        "National Honor Society",
-        "AP Scholar with Distinction"
+        "All A Honor Roll (2017-2022)",
+        "National Junior Honor Society (8th Grade)",
+        "Academic Excellence Recognition"
       ]
     }
   ];
 
   const courses = [
-    { name: "Data Structures & Algorithms", grade: "A+", credits: 4 },
-    { name: "Software Engineering", grade: "A", credits: 3 },
-    { name: "Database Systems", grade: "A+", credits: 3 },
-    { name: "Computer Networks", grade: "A", credits: 3 },
-    { name: "Machine Learning", grade: "A-", credits: 4 },
-    { name: "Web Development", grade: "A+", credits: 3 },
-    { name: "Operating Systems", grade: "A", credits: 4 },
-    { name: "Calculus III", grade: "A", credits: 4 }
+    { name: "AP Calculus BC", grade: "A", credits: 1 },
+    { name: "AP Physics 1", grade: "A", credits: 1 },
+    { name: "AP English Language", grade: "A", credits: 1 },
+    { name: "AP US History", grade: "A", credits: 1 },
+    { name: "Pre-AP Chemistry", grade: "A", credits: 1 },
+    { name: "Spanish III", grade: "A", credits: 1 },
+    { name: "Computer Science", grade: "A", credits: 1 },
+    { name: "Advanced Mathematics", grade: "A", credits: 1 }
   ];
 
   const skills = [
@@ -160,20 +148,20 @@ const Academics = () => {
           <h3 className="text-2xl font-bold mb-6 text-center">Academic Excellence Summary</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl font-bold">4.0</div>
-              <div className="text-primary-foreground/80">Current GPA</div>
+              <div className="text-3xl font-bold">5.75</div>
+              <div className="text-primary-foreground/80">Weighted GPA</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">28</div>
-              <div className="text-primary-foreground/80">Credits Completed</div>
+              <div className="text-3xl font-bold">6</div>
+              <div className="text-primary-foreground/80">Years Honor Roll</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">8</div>
-              <div className="text-primary-foreground/80">A+ Grades</div>
+              <div className="text-3xl font-bold">4</div>
+              <div className="text-primary-foreground/80">AP Courses</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">3</div>
-              <div className="text-primary-foreground/80">Honor Societies</div>
+              <div className="text-3xl font-bold">100%</div>
+              <div className="text-primary-foreground/80">A Grades</div>
             </div>
           </div>
         </div>

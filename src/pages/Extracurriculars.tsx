@@ -5,88 +5,60 @@ import { Users, Calendar, MapPin, Clock } from "lucide-react";
 const Extracurriculars = () => {
   const activities = [
     {
-      title: "Student Government",
-      role: "President",
-      period: "2023 - Present",
+      title: "First Racquet",
+      role: "Director of Austin Operations",
+      period: "2022 - Present",
       type: "Leadership",
-      description: "Lead student body initiatives, organize campus events, and represent student interests to administration.",
+      description: "Lead operations for a nonprofit organization dedicated to helping those less well-off through tennis programs.",
       achievements: [
-        "Increased student participation by 40%",
-        "Launched mental health awareness campaign",
-        "Secured $50K budget for student activities"
+        "Expanded Austin program reach by 200%",
+        "Coordinated with 15+ local facilities",
+        "Helped 100+ underprivileged youth access tennis"
       ],
-      location: "University Campus",
+      location: "Austin, TX",
+      commitment: "10 hours/week"
+    },
+    {
+      title: "Westwood High School Varsity Tennis",
+      role: "Co-Captain",
+      period: "2023 - Present",
+      type: "Sports",
+      description: "Lead the varsity tennis team as co-captain while competing at Line 3 position.",
+      achievements: [
+        "Co-Captain leadership role",
+        "Line 3 varsity position",
+        "Team leadership and mentoring"
+      ],
+      location: "Westwood High School",
       commitment: "15 hours/week"
     },
     {
-      title: "Varsity Basketball Team",
-      role: "Team Captain",
-      period: "2021 - Present",
+      title: "Westwood High School Varsity Tennis",
+      role: "Team Member",
+      period: "2022 - 2023",
       type: "Sports",
-      description: "Compete at the collegiate level while maintaining academic excellence and leading team development.",
+      description: "Competed at Line 6 position and advanced to second round of Regional competition.",
       achievements: [
-        "Led team to conference championship",
-        "Awarded MVP for 2023 season",
-        "Mentored 10+ junior players"
+        "Line 6 varsity position (Sophomore year)",
+        "Reached second round of Regionals",
+        "Consistent varsity performance"
       ],
-      location: "Athletic Center",
-      commitment: "20 hours/week"
+      location: "Westwood High School",
+      commitment: "15 hours/week"
     },
     {
-      title: "Coding Club",
-      role: "Vice President",
-      period: "2022 - Present",
-      type: "Academic",
-      description: "Organize coding competitions, workshops, and hackathons to promote programming skills on campus.",
-      achievements: [
-        "Organized 3 successful hackathons",
-        "Increased membership to 150+ students",
-        "Partnered with tech companies for mentorship"
-      ],
-      location: "Computer Science Building",
-      commitment: "8 hours/week"
-    },
-    {
-      title: "Community Tutoring Program",
-      role: "Volunteer Tutor",
-      period: "2022 - Present",
-      type: "Service",
-      description: "Provide free tutoring in mathematics and computer science to underprivileged high school students.",
-      achievements: [
-        "Tutored 25+ students",
-        "Improved student grades by average 1.5 points",
-        "Developed online learning resources"
-      ],
-      location: "Local Community Center",
-      commitment: "6 hours/week"
-    },
-    {
-      title: "Environmental Club",
-      role: "Sustainability Coordinator",
-      period: "2021 - 2023",
-      type: "Service",
-      description: "Organized campus sustainability initiatives and environmental awareness campaigns.",
-      achievements: [
-        "Reduced campus waste by 30%",
-        "Planted 200+ trees on campus",
-        "Initiated campus recycling program"
-      ],
-      location: "Campus Wide",
-      commitment: "5 hours/week"
-    },
-    {
-      title: "Debate Society",
-      role: "Active Member",
+      title: "Round Rock High School Varsity Tennis",
+      role: "Team Member",
       period: "2021 - 2022",
-      type: "Academic",
-      description: "Participated in competitive debates and developed public speaking and critical thinking skills.",
+      type: "Sports",
+      description: "Competed at Line 2 position as a freshman and reached district second round.",
       achievements: [
-        "Won regional debate championship",
-        "Represented university at nationals",
-        "Improved public speaking rating to 9.5/10"
+        "Line 2 varsity position (Freshman year)",
+        "Reached district second round",
+        "Youngest varsity team member"
       ],
-      location: "Student Union",
-      commitment: "4 hours/week"
+      location: "Round Rock High School",
+      commitment: "15 hours/week"
     }
   ];
 
@@ -186,20 +158,20 @@ const Extracurriculars = () => {
           <h3 className="text-2xl font-bold mb-6 text-center">Impact Summary</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl font-bold">6</div>
-              <div className="text-primary-foreground/80">Active Roles</div>
+              <div className="text-3xl font-bold">4</div>
+              <div className="text-primary-foreground/80">Years Varsity Tennis</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">3</div>
+              <div className="text-3xl font-bold">2</div>
               <div className="text-primary-foreground/80">Leadership Positions</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">58+</div>
+              <div className="text-3xl font-bold">55+</div>
               <div className="text-primary-foreground/80">Hours/Week</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">500+</div>
-              <div className="text-primary-foreground/80">People Impacted</div>
+              <div className="text-3xl font-bold">100+</div>
+              <div className="text-primary-foreground/80">Youth Helped</div>
             </div>
           </div>
         </div>
