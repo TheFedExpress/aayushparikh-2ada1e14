@@ -7,10 +7,10 @@ const Academics = () => {
   const education = [
     {
       institution: "Westwood High School",
-      degree: "High School Diploma",
+      degree: "High School Student",
       period: "2021 - 2025",
       gpa: "5.75/6.0",
-      status: "Junior Year",
+      status: "Going into Junior Year",
       highlights: [
         "All A Honor Roll (2017-2022)",
         "National Junior Honor Society (8th Grade)",
@@ -20,14 +20,19 @@ const Academics = () => {
   ];
 
   const courses = [
-    { name: "AP Calculus BC", grade: "A", credits: 1 },
-    { name: "AP Physics 1", grade: "A", credits: 1 },
-    { name: "AP English Language", grade: "A", credits: 1 },
-    { name: "AP US History", grade: "A", credits: 1 },
-    { name: "Pre-AP Chemistry", grade: "A", credits: 1 },
-    { name: "Spanish III", grade: "A", credits: 1 },
-    { name: "Computer Science", grade: "A", credits: 1 },
-    { name: "Advanced Mathematics", grade: "A", credits: 1 }
+    { name: "Algebra 2", grade: "A", credits: 1 },
+    { name: "Advanced Geometry", grade: "A", credits: 1 },
+    { name: "Adv Computer Science 1", grade: "A", credits: 1 },
+    { name: "Spanish 1a", grade: "A", credits: 0.5 },
+    { name: "Spanish 1b", grade: "A", credits: 0.5 },
+    { name: "Spanish 2", grade: "A", credits: 1 },
+    { name: "Advanced Spanish 3", grade: "A", credits: 1 },
+    { name: "AP Computer Science A", grade: "A", credits: 1 },
+    { name: "Orchestra", grade: "A", credits: 4 },
+    { name: "AP Human Geography", grade: "A", credits: 1 },
+    { name: "AP Precalculus", grade: "A", credits: 1 },
+    { name: "AP Statistics", grade: "A", credits: 1 },
+    { name: "AP Physics 1", grade: "A", credits: 1 }
   ];
 
   const skills = [

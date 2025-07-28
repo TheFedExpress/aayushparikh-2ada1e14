@@ -37,11 +37,11 @@ const Extracurriculars = () => {
       role: "Team Member",
       period: "2022 - 2023",
       type: "Sports",
-      description: "Competed at Line 6 position and advanced to second round of Regional competition.",
+      description: "Competed at Line 6 position and won State Championship in sophomore year.",
       achievements: [
-        "Line 6 varsity position (Sophomore year)",
-        "Reached second round of Regionals",
-        "Consistent varsity performance"
+        "State Champion (Sophomore year)",
+        "Line 6 varsity position",
+        "Reached second round of Regionals"
       ],
       location: "Westwood High School",
       commitment: "15 hours/week"
