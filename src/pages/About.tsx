@@ -11,12 +11,12 @@ const About = () => {
     I believe in the power of innovation, continuous learning, and using technology to solve real-world problems. My goal is to combine my technical skills with my leadership experience to make a meaningful impact.`,
     location: "San Francisco, CA",
     interests: [
-      { name: "Technology", icon: Gamepad2, description: "Exploring emerging tech trends and building innovative projects" },
+      { name: "Technology", icon: Gamepad2, description: "Following phone-related news and emerging tech trends" },
       { name: "Photography", icon: Camera, description: "Capturing moments and telling stories through visual art" },
-      { name: "Music", icon: Music, description: "Playing guitar and discovering new artists across all genres" },
-      { name: "Reading", icon: Book, description: "Diving into sci-fi novels and personal development books" },
-      { name: "Coffee", icon: Coffee, description: "Exploring local coffee shops and brewing the perfect cup" },
-      { name: "Volunteering", icon: Heart, description: "Giving back to the community through education and mentorship" }
+      { name: "Music", icon: Music, description: "Playing piano and violin, discovering new artists across genres" },
+      { name: "Reading", icon: Book, description: "Diving into dystopian novels and mystery books" },
+      { name: "Coffee", icon: Coffee, description: "Exploring different brewing methods and perfecting the craft" },
+      { name: "Volunteering", icon: Heart, description: "Giving back to the community through service and mentorship" }
     ]
   };
 
