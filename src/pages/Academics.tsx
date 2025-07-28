@@ -27,12 +27,12 @@ const Academics = () => {
     { name: "Spanish 1b", credits: 0.5 },
     { name: "Spanish 2", credits: 1 },
     { name: "Advanced Spanish 3", credits: 1 },
-    { name: "AP Computer Science A", credits: 1 },
+    { name: "AP Computer Science A", credits: 1, apScore: 4 },
     { name: "Orchestra", credits: 4 },
-    { name: "AP Human Geography", credits: 1 },
-    { name: "AP Precalculus", credits: 1 },
-    { name: "AP Statistics", credits: 1 },
-    { name: "AP Physics 1", credits: 1 }
+    { name: "AP Human Geography", credits: 1, apScore: 5 },
+    { name: "AP Precalculus", credits: 1, apScore: 5 },
+    { name: "AP Statistics", credits: 1, apScore: 5 },
+    { name: "AP Physics 1", credits: 1, apScore: 5 }
   ];
 
   const skills = [
@@ -120,8 +120,13 @@ const Academics = () => {
                       {course.credits} cr
                     </Badge>
                   </div>
-                  <div className="flex justify-center">
-                    <Award className="h-5 w-5 text-primary" />
+                  <div className="flex justify-between items-center">
+                    {course.apScore ? (
+                      <span className="text-2xl font-bold text-primary">AP: {course.apScore}</span>
+                    ) : (
+                      <Award className="h-5 w-5 text-primary" />
+                    )}
+                    <Award className="h-5 w-5 text-muted-foreground" />
                   </div>
                 </CardContent>
               </Card>
@@ -160,7 +165,7 @@ const Academics = () => {
               <div className="text-primary-foreground/80">Years Honor Roll</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">4</div>
+              <div className="text-3xl font-bold">5</div>
               <div className="text-primary-foreground/80">AP Courses</div>
             </div>
             <div>
