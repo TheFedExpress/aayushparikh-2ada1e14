@@ -40,12 +40,12 @@ const About = () => {
   ];
 
   const funFacts = [
-    "Can solve a Rubik's cube in under 2 minutes",
-    "Has visited 15+ countries and 30+ states",
-    "Maintains a 4.0 GPA while playing varsity basketball",
-    "Fluent in 3 programming languages and 2 spoken languages",
-    "Once won a hackathon with just 30 minutes left on the clock",
-    "Has read over 50 books in the past year"
+    "Can solve a Rubik's cube in under a minute",
+    "Has visited 5 different continents", 
+    "Maintains a 5.75 GPA while playing varsity tennis",
+    "Fluent in 2 programming languages and 2 spoken languages",
+    "Black belt in taekwondo",
+    "State champion in tennis (sophomore year)"
   ];
 
   return (

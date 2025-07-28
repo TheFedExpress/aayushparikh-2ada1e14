@@ -8,7 +8,7 @@ const Achievements = () => {
       title: "Academic Excellence Award",
       category: "Academic",
       year: "2024",
-      description: "Recognized for maintaining a 4.0 GPA throughout the academic year",
+      description: "Recognized for maintaining a 5.75 GPA throughout the academic year",
       icon: Trophy,
       color: "from-red-400 to-orange-500"
     },
