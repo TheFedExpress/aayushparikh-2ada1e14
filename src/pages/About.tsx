@@ -9,7 +9,7 @@ const About = () => {
     description: `Hi there! I'm Aayush, a student who is looking to go into Computer Engineering. I have a passion for technology, sports, and getting things done. When I'm not studying, you can find me on the tennis court.
 
     I believe in the power of innovation, continuous learning, and using technology to solve real-world problems. My goal is to combine my technical skills with my leadership experience to make a meaningful impact.`,
-    location: "San Francisco, CA",
+    location: "Austin, TX",
     interests: [
       { name: "Technology", icon: Gamepad2, description: "Following phone-related news and emerging tech trends" },
       { name: "Photography", icon: Camera, description: "Capturing moments and telling stories through visual art" },
