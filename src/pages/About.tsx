@@ -4,11 +4,11 @@ import { Heart, Coffee, Music, Camera, Book, Gamepad2 } from "lucide-react";
 
 const About = () => {
   const personalInfo = {
-    name: "Alex Johnson",
-    tagline: "Passionate learner, dedicated leader, and aspiring innovator",
-    description: `Hi there! I'm Alex, a computer science student with a passion for technology, leadership, and making a positive impact in my community. When I'm not coding or studying, you'll find me on the basketball court, volunteering in my community, or exploring new technologies.
+    name: "Aayush Parikh",
+    tagline: "Student passionate about Computer Engineering, technology, and tennis",
+    description: `Hi there! I'm Aayush, a student who is looking to go into Computer Engineering. I have a passion for technology, sports, and getting things done. When I'm not studying, you can find me on the tennis court.
 
-    I believe in the power of education, teamwork, and continuous growth. My goal is to use technology to solve real-world problems and create meaningful solutions that benefit society.`,
+    I believe in the power of innovation, continuous learning, and using technology to solve real-world problems. My goal is to combine my technical skills with my leadership experience to make a meaningful impact.`,
     location: "San Francisco, CA",
     interests: [
       { name: "Technology", icon: Gamepad2, description: "Exploring emerging tech trends and building innovative projects" },

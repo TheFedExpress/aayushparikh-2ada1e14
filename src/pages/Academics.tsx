@@ -134,23 +134,6 @@ const Academics = () => {
           </div>
         </section>
 
-        {/* Academic Skills */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Academic Skills</h2>
-          <Card className="p-8">
-            <div className="grid md:grid-cols-2 gap-8">
-              {skills.map((skill, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="font-medium">{skill.name}</span>
-                    <span className="text-muted-foreground">{skill.proficiency}%</span>
-                  </div>
-                  <Progress value={skill.proficiency} className="h-2" />
-                </div>
-              ))}
-            </div>
-          </Card>
-        </section>
 
         {/* Academic Summary */}
         <div className="p-8 bg-gradient-primary rounded-lg text-primary-foreground">
@@ -167,10 +150,6 @@ const Academics = () => {
             <div>
               <div className="text-3xl font-bold">5</div>
               <div className="text-primary-foreground/80">AP Courses</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold">100%</div>
-              <div className="text-primary-foreground/80">A Grades</div>
             </div>
           </div>
         </div>
