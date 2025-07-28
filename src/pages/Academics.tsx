@@ -20,19 +20,19 @@ const Academics = () => {
   ];
 
   const courses = [
-    { name: "Algebra 2", grade: "A", credits: 1 },
-    { name: "Advanced Geometry", grade: "A", credits: 1 },
-    { name: "Adv Computer Science 1", grade: "A", credits: 1 },
-    { name: "Spanish 1a", grade: "A", credits: 0.5 },
-    { name: "Spanish 1b", grade: "A", credits: 0.5 },
-    { name: "Spanish 2", grade: "A", credits: 1 },
-    { name: "Advanced Spanish 3", grade: "A", credits: 1 },
-    { name: "AP Computer Science A", grade: "A", credits: 1 },
-    { name: "Orchestra", grade: "A", credits: 4 },
-    { name: "AP Human Geography", grade: "A", credits: 1 },
-    { name: "AP Precalculus", grade: "A", credits: 1 },
-    { name: "AP Statistics", grade: "A", credits: 1 },
-    { name: "AP Physics 1", grade: "A", credits: 1 }
+    { name: "Algebra 2", credits: 1 },
+    { name: "Advanced Geometry", credits: 1 },
+    { name: "Adv Computer Science 1", credits: 1 },
+    { name: "Spanish 1a", credits: 0.5 },
+    { name: "Spanish 1b", credits: 0.5 },
+    { name: "Spanish 2", credits: 1 },
+    { name: "Advanced Spanish 3", credits: 1 },
+    { name: "AP Computer Science A", credits: 1 },
+    { name: "Orchestra", credits: 4 },
+    { name: "AP Human Geography", credits: 1 },
+    { name: "AP Precalculus", credits: 1 },
+    { name: "AP Statistics", credits: 1 },
+    { name: "AP Physics 1", credits: 1 }
   ];
 
   const skills = [
@@ -120,9 +120,8 @@ const Academics = () => {
                       {course.credits} cr
                     </Badge>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-primary">{course.grade}</span>
-                    <Award className="h-5 w-5 text-muted-foreground" />
+                  <div className="flex justify-center">
+                    <Award className="h-5 w-5 text-primary" />
                   </div>
                 </CardContent>
               </Card>
