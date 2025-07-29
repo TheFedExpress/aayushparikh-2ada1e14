@@ -5,8 +5,8 @@ import { Heart, Coffee, Music, Camera, Book, Gamepad2 } from "lucide-react";
 const About = () => {
   const personalInfo = {
     name: "Aayush Parikh",
-    tagline: "Student passionate about Computer Engineering, technology, and tennis",
-    description: `Hi there! I'm Aayush, a student who is looking to go into Computer Engineering. I have a passion for technology, sports, and getting things done. When I'm not studying, you can find me on the tennis court.
+    tagline: "Student passionate about computer engineering, technology, and tennis",
+    description: `Hi there! I'm Aayush, a student who is looking to go into computer engineering. I have a passion for technology, sports, and getting things done. When I'm not studying, you can find me on the tennis court.
 
     I believe in the power of innovation, continuous learning, and using technology to solve real-world problems. My goal is to combine my technical skills with my leadership experience to make a meaningful impact.`,
     location: "Austin, TX",
