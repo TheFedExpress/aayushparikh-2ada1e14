@@ -142,13 +142,7 @@ const About = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Badge variant="secondary" className="px-4 py-2 text-lg">
-              📧 alex.johnson@university.edu
-            </Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-lg">
-              💼 LinkedIn: /in/alexjohnson
-            </Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-lg">
-              🐙 GitHub: @alexjohnson
+              📧 parikhaayush@gmail.co
             </Badge>
           </div>
         </div>
