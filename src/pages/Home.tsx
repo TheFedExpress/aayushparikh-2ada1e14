@@ -6,13 +6,6 @@ import { Trophy, GraduationCap, Users, User } from "lucide-react";
 const Home = () => {
   const quickLinks = [
     {
-      title: "Achievements",
-      description: "View my accomplishments and awards",
-      icon: Trophy,
-      path: "/achievements",
-      gradient: "from-red-400 to-orange-500"
-    },
-    {
       title: "Academic Record",
       description: "Explore my educational journey",
       icon: GraduationCap,
@@ -52,9 +45,9 @@ const Home = () => {
                 Get to Know Me
               </Button>
             </Link>
-            <Link to="/achievements">
+            <Link to="/academics">
               <Button variant="outline" size="lg" className="hover:bg-secondary/80 transition-smooth">
-                View Achievements
+                View Academics
               </Button>
             </Link>
           </div>
@@ -92,8 +85,8 @@ const Home = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">25+</div>
-              <div className="text-muted-foreground">Achievements</div>
+              <div className="text-3xl font-bold text-primary mb-2">15+</div>
+              <div className="text-muted-foreground">Projects</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">4.0</div>
