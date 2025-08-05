@@ -16,7 +16,7 @@ const Extracurriculars = () => {
         "Helped 100+ underprivileged youth access tennis"
       ],
       location: "Austin, TX",
-      commitment: "About 10 hours/month"
+      commitment: "10 hours/month"
     },
     {
       title: "Westwood High School Varsity Tennis",
@@ -166,8 +166,8 @@ const Extracurriculars = () => {
               <div className="text-primary-foreground/80">Leadership Positions</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">55+</div>
-              <div className="text-primary-foreground/80">Hours/Week</div>
+              <div className="text-3xl font-bold">10+</div>
+              <div className="text-primary-foreground/80">Hours/Month</div>
             </div>
             <div>
               <div className="text-3xl font-bold">100+</div>
