@@ -138,7 +138,7 @@ const Academics = () => {
         {/* Academic Summary */}
         <div className="p-8 bg-gradient-primary rounded-lg text-primary-foreground">
           <h3 className="text-2xl font-bold mb-6 text-center">Academic Excellence Summary</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center max-w-2xl mx-auto">
             <div>
               <div className="text-3xl font-bold">5.75</div>
               <div className="text-primary-foreground/80">Weighted GPA</div>
