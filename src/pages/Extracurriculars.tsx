@@ -1,14 +1,17 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Calendar, MapPin, Clock } from "lucide-react";
+import { useState } from "react";
 
 const Extracurriculars = () => {
+  const [selectedFilter, setSelectedFilter] = useState("All");
+
   const activities = [
     {
       title: "First Racquet",
       role: "Director of Austin Operations",
       period: "2022 - Present",
-      type: "Leadership",
+      type: "Service",
       description: "Lead operations for a nonprofit organization dedicated to helping those less well-off through tennis programs.",
       achievements: [
         "Expanded Austin program reach by 200%",
@@ -20,14 +23,28 @@ const Extracurriculars = () => {
     },
     {
       title: "Westwood High School Varsity Tennis",
-      role: "Co-Captain",
+      role: "Captain",
       period: "2023 - Present",
-      type: "Sports",
-      description: "Lead the varsity tennis team as co-captain while competing at Line 3 position.",
+      type: "Leadership",
+      description: "Lead the varsity tennis team as captain while competing at Line 3 position.",
       achievements: [
-        "Co-Captain leadership role",
+        "Captain leadership role",
         "Line 3 varsity position",
         "Team leadership and mentoring"
+      ],
+      location: "Westwood High School",
+      commitment: "15 hours/week"
+    },
+    {
+      title: "Westwood High School Varsity Tennis",
+      role: "Team Member",
+      period: "2023 - Present",
+      type: "Sports",
+      description: "Compete at Line 3 position on varsity tennis team.",
+      achievements: [
+        "Line 3 varsity position",
+        "Consistent team performance",
+        "Athletic dedication"
       ],
       location: "Westwood High School",
       commitment: "15 hours/week"
@@ -72,7 +89,11 @@ const Extracurriculars = () => {
     }
   };
 
-  const types = ["All", "Leadership", "Sports", "Academic", "Service"];
+  const types = ["All", "Leadership", "Sports", "Service"];
+
+  const filteredActivities = selectedFilter === "All" 
+    ? activities 
+    : activities.filter(activity => activity.type === selectedFilter);
 
   return (
     <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
@@ -92,8 +113,9 @@ const Extracurriculars = () => {
           {types.map((type) => (
             <Badge 
               key={type} 
-              variant={type === "All" ? "default" : "secondary"}
+              variant={selectedFilter === type ? "default" : "secondary"}
               className="cursor-pointer hover:bg-primary/80 transition-smooth"
+              onClick={() => setSelectedFilter(type)}
             >
               {type}
             </Badge>
@@ -102,7 +124,7 @@ const Extracurriculars = () => {
 
         {/* Activity Cards */}
         <div className="space-y-6 mb-16">
-          {activities.map((activity, index) => (
+          {filteredActivities.map((activity, index) => (
             <Card key={index} className="hover:shadow-elegant transition-smooth">
               <CardHeader>
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
