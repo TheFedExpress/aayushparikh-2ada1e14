@@ -11,7 +11,7 @@ const Extracurriculars = () => {
       title: "First Racquet",
       role: "Director of Austin Operations",
       period: "2022 - Present",
-      type: "Service",
+      type: ["Service", "Leadership"],
       description: "Lead operations for a nonprofit organization dedicated to helping those less well-off through tennis programs.",
       achievements: [
         "Expanded Austin program reach by 200%",
@@ -25,7 +25,7 @@ const Extracurriculars = () => {
       title: "Westwood High School Varsity Tennis",
       role: "Captain",
       period: "2023 - Present",
-      type: "Leadership",
+      type: ["Sports", "Leadership"],
       description: "Lead the varsity tennis team as captain while competing at Line 3 position.",
       achievements: [
         "Captain leadership role",
@@ -38,22 +38,8 @@ const Extracurriculars = () => {
     {
       title: "Westwood High School Varsity Tennis",
       role: "Team Member",
-      period: "2023 - Present",
-      type: "Sports",
-      description: "Compete at Line 3 position on varsity tennis team.",
-      achievements: [
-        "Line 3 varsity position",
-        "Consistent team performance",
-        "Athletic dedication"
-      ],
-      location: "Westwood High School",
-      commitment: "15 hours/week"
-    },
-    {
-      title: "Westwood High School Varsity Tennis",
-      role: "Team Member",
       period: "2022 - 2023",
-      type: "Sports",
+      type: ["Sports"],
       description: "Competed at Line 6 position and won State Championship in sophomore year.",
       achievements: [
         "State Champion (Sophomore year)",
@@ -67,7 +53,7 @@ const Extracurriculars = () => {
       title: "Round Rock High School Varsity Tennis",
       role: "Team Member",
       period: "2021 - 2022",
-      type: "Sports",
+      type: ["Sports"],
       description: "Competed at Line 2 position as a freshman and reached district second round.",
       achievements: [
         "Line 2 varsity position (Freshman year)",
@@ -93,7 +79,7 @@ const Extracurriculars = () => {
 
   const filteredActivities = selectedFilter === "All" 
     ? activities 
-    : activities.filter(activity => activity.type === selectedFilter);
+    : activities.filter(activity => activity.type.includes(selectedFilter));
 
   return (
     <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
@@ -130,8 +116,12 @@ const Extracurriculars = () => {
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${getTypeColor(activity.type)}`}></div>
-                      <Badge variant="outline">{activity.type}</Badge>
+                      <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${getTypeColor(activity.type[0])}`}></div>
+                      <div className="flex gap-2">
+                        {activity.type.map((type, typeIndex) => (
+                          <Badge key={typeIndex} variant="outline">{type}</Badge>
+                        ))}
+                      </div>
                     </div>
                     <CardTitle className="text-2xl mb-1">{activity.title}</CardTitle>
                     <p className="text-lg font-medium text-primary">{activity.role}</p>
