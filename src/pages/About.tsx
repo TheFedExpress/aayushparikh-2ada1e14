@@ -144,6 +144,11 @@ const About = () => {
             <Badge variant="secondary" className="px-4 py-2 text-lg">
               📧 parikhaayush@gmail.com
             </Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-lg">
+              <a href="https://www.linkedin.com/in/aayush-parikh-a7693237a/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                💼 LinkedIn Profile
+              </a>
+            </Badge>
           </div>
         </div>
       </div>
